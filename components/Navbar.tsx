@@ -1,27 +1,9 @@
 "use client";
 
 import * as React from "react";
-import {
-  //   Search,
-  Menu,
-  User,
-  BookOpen,
-  TrendingUp,
-  Clock,
-  Grid3X3,
-  Moon,
-  Sun,
-} from "lucide-react";
+import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 import { Button } from "@/components/ui/button";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
 
 import Image from "next/image";
 
@@ -65,9 +47,8 @@ export function Navbar() {
             <Moon className="absolute h-4 w-4 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
             <span className="sr-only">Toggle theme</span>
           </Button>
-
           {/* User Menu */}
-          <DropdownMenu>
+          {/* <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button
                 variant="ghost"
@@ -97,8 +78,7 @@ export function Navbar() {
               <DropdownMenuItem>Settings</DropdownMenuItem>
               <DropdownMenuItem>Sign out</DropdownMenuItem>
             </DropdownMenuContent>
-          </DropdownMenu>
-
+          </DropdownMenu> */}
           {/* Mobile Menu */}
           {/* <Sheet>
             <SheetTrigger asChild>
